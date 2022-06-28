@@ -1,10 +1,9 @@
 import pygame
-from checkers.constants import WIDTH, HEIGHT
-from checkers.board import Board
+from constants import WIDTH, HEIGHT, FPS
+from board import Board
 
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Checkers")
-FPS = 60
 
 def main():
     run = True
