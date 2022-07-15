@@ -1,6 +1,6 @@
 import pygame
 from constants import SQUARE_SIZE, WIDTH, HEIGHT, FPS
-from board import Board
+from checkers import Checkers
 
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Checkers")
@@ -14,7 +14,7 @@ def piece_position(position):
 def main():
     run = True
     clock = pygame.time.Clock()
-    board = Board()
+    checkers = Checkers(WINDOW)
 
     while run:
         clock.tick(FPS)
@@ -25,12 +25,8 @@ def main():
             
             if event.type == pygame.MOUSEBUTTONDOWN:
                 position = pygame.mouse.get_pos()
-                row, col = piece_position(position)
-                piece = board.get_piece(row, col)
-                board.move_piece(piece, 5, 2)
 
-        board.draw_board(WINDOW)
-        pygame.display.update()
+        checkers.update()
 
     pygame.quit()
 

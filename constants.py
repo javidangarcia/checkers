@@ -13,4 +13,5 @@ BLACK = (0, 0, 0)
 BLUE = (0, 0, 255)
 GRAY = (128, 128, 128)
 
-CROWN = pygame.transform.scale(pygame.image.load("assets/crown.png"), (45, 25))
+# IMAGES
+CROWN = pygame.transform.scale(pygame.image.load("assets/crown.png"), (45, 45))
