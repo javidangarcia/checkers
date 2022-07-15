@@ -1,5 +1,5 @@
 import pygame
-from constants import RED, SQUARE_SIZE, GRAY
+from constants import RED, SQUARE_SIZE, GRAY, CROWN
 
 class Piece:
     PADDING = 15
@@ -31,3 +31,10 @@ class Piece:
         radius = SQUARE_SIZE // 2 - self.PADDING
         pygame.draw.circle(window, GRAY, (self.x, self.y), radius + self.OUTLINE)
         pygame.draw.circle(window, self.color, (self.x, self.y), radius)
+        if self.king:
+            window.blit(CROWN, (self.x - CROWN.get_width() // 2, self.y - CROWN.get_height() // 2))
+
+    def move_piece(self, row, col):
+        self.row = row
+        self.col = col
+        self.calculate_position()
