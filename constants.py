@@ -1,17 +1,18 @@
 import pygame
 
 # GAME VARIABLES
-WIDTH, HEIGHT = 750, 750
+WIDTH, HEIGHT = 700, 700
 ROWS, COLS = 8, 8
 SQUARE_SIZE = WIDTH // COLS
 FPS = 60
 
 # COLORS
-RED = (255, 0, 0)
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-BLUE = (0, 0, 255)
-GRAY = (128, 128, 128)
+BLUE = (92, 158, 255)
+RED = (255, 95, 95)
+WHITE = (255, 250, 250)
+BLACK = (31, 31, 30)
 
-# IMAGES
-CROWN = pygame.transform.scale(pygame.image.load("assets/crown.png"), (45, 45))
+# LOADING IMAGES
+BLUE_PIECE = pygame.transform.scale(pygame.image.load("assets/blue-piece.png"), (70, 70))
+RED_PIECE = pygame.transform.scale(pygame.image.load("assets/red-piece.png"), (70, 70))
+CROWN = pygame.transform.scale(pygame.image.load("assets/king.png"), (45, 45))

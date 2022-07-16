@@ -25,6 +25,8 @@ def main():
             
             if event.type == pygame.MOUSEBUTTONDOWN:
                 position = pygame.mouse.get_pos()
+                row, col = piece_position(position)
+                checkers.select(row, col)
 
         checkers.update()
 
