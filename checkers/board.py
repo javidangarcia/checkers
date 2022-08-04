@@ -1,6 +1,6 @@
 import pygame
-from piece import Piece
-from constants import BLACK, ROWS, BLUE, SQUARE_SIZE, COLS, RED, WHITE
+from checkers.piece import Piece
+from checkers.constants import BLACK, ROWS, BLUE, SQUARE_SIZE, COLS, RED, WHITE
 
 class Board:
     def __init__(self):

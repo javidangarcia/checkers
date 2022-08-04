@@ -1,4 +1,4 @@
-from constants import SQUARE_SIZE, CROWN, BLUE, BLUE_PIECE, RED_PIECE
+from checkers.constants import SQUARE_SIZE, CROWN, BLUE, BLUE_PIECE, RED_PIECE
 
 class Piece:
     PADDING = 15
